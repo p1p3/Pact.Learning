@@ -1,0 +1,38 @@
+{
+  "consumer": {
+    "name": "Consumer"
+  },
+  "provider": {
+    "name": "Todos API"
+  },
+  "interactions": [
+    {
+      "description": "A GET request to retrieve the todo",
+      "providerState": "There is a something with id '1'",
+      "request": {
+        "method": "get",
+        "path": "/todos/1",
+        "headers": {
+          "Accept": "application/json"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "id": "1",
+          "userId": "1",
+          "title": "delectus aut autem",
+          "completed": false
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}
