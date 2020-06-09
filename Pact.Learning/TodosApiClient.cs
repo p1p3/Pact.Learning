@@ -1,10 +1,12 @@
-﻿using Newtonsoft.Json;
-using Pact.Models;
-using System;
+﻿using System;
 using System.Net;
 using System.Net.Http;
 
-namespace Pact.Learning.Tests
+using Newtonsoft.Json;
+
+using Pact.Models;
+
+namespace Pact.Learning.Client
 {
     public class TodosApiClient
     {
